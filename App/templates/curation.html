@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Wine Curation — Ben Barak Wine Initiative{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Wine Curation</h1>
+        <div class="gold-divider"></div>
+        <p>Quality wine, sourced with intention.</p>
+    </div>
+</section>
+
+<section class="curation-intro">
+    <div class="container">
+        <p>The curation arm of the Ben Barak Wine Initiative offers a premium, personal service for those who understand that wine is more than a drink — it is an experience, a statement, and a gift.</p>
+    </div>
+</section>
+
+<section class="curation-showcase">
+    <img src="{{ url_for('static', filename='images/web/winery-view.jpg') }}" alt="Malbec 2025 — Ben Barak Wine Initiative">
+</section>
+
+<section class="curation-services">
+    <div class="container">
+        <h2>What We Offer</h2>
+        <div class="services-list">
+            <div class="service-row">
+                <div class="service-number">01</div>
+                <div class="service-text">
+                    <h3>Full Service Curation</h3>
+                    <p>End-to-end wine sourcing including custom labeling and premium packaging. Ideal for corporate events, branded gifts, and exclusive experiences.</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-number">02</div>
+                <div class="service-text">
+                    <h3>Bottle Supply</h3>
+                    <p>We source and supply exceptional bottles — you handle the label and packaging. Perfect for clients who already have their own branding in place.</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-number">03</div>
+                <div class="service-text">
+                    <h3>Private Client Service</h3>
+                    <p>A personal, white-glove service for individuals seeking quality wine for special occasions, collections, or events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="curation-clients">
+    <div class="container">
+        <h2>Featured Collaborations</h2>
+        <div class="client-entry">
+            <div class="client-entry-text">
+                <p class="client-tag">2024 — Corporate Curation — Galilee Malbec</p>
+                <h3>Elite18X Impact</h3>
+                <p>Elite18X is an Israeli foundation dedicated to transforming IDF reservists into entrepreneurs and business leaders — helping those who served rebuild their careers and drive Israel's economy forward.</p>
+                <p>Through my connection with Mike Silberg, whom I met through the Hoffman Kofman Foundation, I was invited to curate wine for their mentors' event — a room that included former IDF Chief of Staff Aviv Kochavi. I sourced a Malbec 2024 from the Galilee, and the remarkable volunteer team at Elite18X created a custom label specially crafted for the event — a fitting tribute to an extraordinary group of people.</p>
+                <a href="https://www.18ximpact.org/" target="_blank" class="btn btn-outline">About Elite18X</a>
+            </div>
+            <div class="client-entry-images">
+                <img src="{{ url_for('static', filename='images/web/elite18x-bottle.jpg') }}" alt="Elite18X wine at the event">
+                <img src="{{ url_for('static', filename='images/web/elite18x-cochavi.jpg') }}" alt="Mike Silberg with Aviv Kochavi, former IDF Chief of Staff">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="curation-cta">
+    <div class="container">
+        <h2>Let's find the right wine for you</h2>
+        <p>Every order begins with a conversation.</p>
+        <a href="/contact" class="btn btn-outline-light">Get in Touch</a>
+    </div>
+</section>
+{% endblock %}

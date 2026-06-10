@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Ben Barak Wine Initiative{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content container">
+        <h1>Ben Barak Wine Initiative</h1>
+        <p class="tagline">Where wine meets purpose. A foundation rooted in heritage, driven by cause.</p>
+        <div class="hero-buttons">
+            <a href="/projects" class="btn btn-primary">Our Projects</a>
+            <a href="/curation" class="btn btn-secondary">Wine Curation</a>
+        </div>
+    </div>
+</section>
+
+<section class="mission">
+    <div class="container">
+        <h2>Our Mission</h2>
+        <div class="gold-divider"></div>
+        <p>The Ben Barak Wine Initiative is a social-led foundation that uses wine as a vehicle for remembrance, community, and impact. We honor those who came before us — and those who gave everything — through every bottle we produce and every project we bring to life.</p>
+    </div>
+</section>
+
+<section class="featured-image-strip">
+    <img src="{{ url_for('static', filename='images/web/home-strip.jpg') }}" alt="The vineyard overlooking the valley — where it all begins">
+</section>
+
+<section class="two-sides">
+    <div class="container">
+        <div class="side">
+            <div class="side-icon">🍷</div>
+            <h3>Social Projects</h3>
+            <div class="gold-divider"></div>
+            <p>Memorial and charity wines where profits are donated to causes that matter — cancer research, fallen soldiers, and the memory of special people.</p>
+            <a href="/projects" class="btn btn-outline">View Projects</a>
+        </div>
+        <div class="side">
+            <div class="side-icon">✦</div>
+            <h3>Wine Curation</h3>
+            <div class="gold-divider"></div>
+            <p>A premium, white-glove service for private clients and companies seeking quality wine — from full packaging solutions to curated bottle selections.</p>
+            <a href="/curation" class="btn btn-outline">Learn More</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

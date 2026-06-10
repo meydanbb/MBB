@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Projects — Ben Barak Wine Initiative{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Projects</h1>
+        <div class="gold-divider"></div>
+        <p>Each project is a story. Each bottle carries a purpose.</p>
+    </div>
+</section>
+
+<section class="projects-grid">
+    <div class="container">
+
+        <!-- NOAM AVRAMOVICH EVENING -->
+        <div class="project-entry">
+            <p class="project-year-tag">2026 — Memorial Evening — Lasting Echoes Malbec</p>
+            <div class="project-title-with-sketch">
+                <img src="{{ url_for('static', filename='images/web/noam-butterfly.jpg') }}" alt="" class="butterfly-sketch" aria-hidden="true">
+                <div>
+                    <h2>עוד יש נועם בעולם</h2>
+                    <p class="project-subtitle">An Evening of Love and Music in Memory of Noam Avramovich</p>
+                </div>
+            </div>
+
+            <div class="project-banner">
+                <img src="{{ url_for('static', filename='images/web/noam-projection.jpg') }}" alt="Memorial evening for Noam Avramovich — projected photos on screen">
+            </div>
+
+            <p>Before Lasting Echoes could begin, I went to the families. I wanted their blessing — their approval to carry the names and memory of their daughters into this project. It was through those conversations that my details found their way to Adva, Noam's mother. She reached out, and after we spoke, she asked if the Lasting Echoes Malbec could be part of an evening she was curating in Noam's memory.</p>
+            <p>On 14 May 2026, friends, family, and community gathered at Beit Hana in Tel Aviv — an evening of poetry, music, and love titled <em>עוד יש נועם בעולם</em>, "There is still Noam in the world." The wine on the tables that night was the same Malbec made for Lasting Echoes: grown in the Galilee, natural, made with intention — and now carrying yet another story inside it.</p>
+            <p>This is what wine can do. It travels. It finds the right rooms and the right people.</p>
+
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='images/web/noam-booklets.jpg') }}" alt="Program booklets for the Noam Avramovich memorial evening">
+                <img src="{{ url_for('static', filename='images/web/noam-performer.jpg') }}" alt="Performer at the Noam Avramovich evening">
+            </div>
+        </div>
+
+        <!-- LASTING ECHOES -->
+        <div class="project-entry">
+            <p class="project-year-tag">2025 — Charity Project</p>
+            <h2>Lasting Echoes</h2>
+
+            <!-- Banner image -->
+            <div class="project-banner">
+                <img src="{{ url_for('static', filename='images/web/le-banner.jpg') }}" alt="Lasting Echoes — Viognier and Malbec 2025 with Galilee view">
+            </div>
+
+            <p>A memorial wine honoring 18 young female observers who fell defending Nahal Oz base on October 7, 2023. Two wines — a Malbec and a Viognier — sourced from Galilee vineyards, with labels bearing artwork derived from graffiti found in the bunker where they served.</p>
+            <p>Every bottle sold is an act of remembrance. 100% of profits are donated to a registered association in their memory.</p>
+
+            <!-- Two side by side -->
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='images/web/le-bottling.jpg') }}" alt="Bottling day — Lasting Echoes 2025">
+                <img src="{{ url_for('static', filename='images/web/le-viognier.jpg') }}" alt="Viognier 2025 — fresh off the line">
+            </div>
+
+            <!-- Landscape full width -->
+            <div class="project-landscape">
+                <img src="{{ url_for('static', filename='images/web/le-landscape.jpg') }}" alt="The Galilee — where the wine is made">
+                <p class="landscape-caption">The Galilee — where every vintage begins.</p>
+            </div>
+
+            <a href="https://lasting-echoes-wine.lovable.app/" target="_blank" class="btn btn-outline">View Project Site</a>
+        </div>
+
+        <!-- KEREN NAFTALI -->
+        <div class="project-entry">
+            <p class="project-year-tag">2021 — First Harvest — Cancer Research</p>
+            <h2>The Beginning</h2>
+            <div class="project-banner">
+                <img src="{{ url_for('static', filename='images/web/beginning-2021.jpg') }}" alt="The views north and east from the 3 Vines Winery in Ramot Naftali">
+            </div>
+            <p class="landscape-caption">Seen here are the views north and east from the 3 Vines Winery in Ramot Naftali.</p>
+            <p>The harvest that started it all. A Petit Verdo and a Cabernet Sauvignon — two varieties I intended to blend, until I tasted them separately and realised each had its own voice. They were bottled as single varietals, and the proceeds were donated to cancer research.</p>
+            <p>This was the inception of the Ben Barak Wine Initiative.</p>
+
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='images/web/malbec-vineyard.jpg') }}" alt="The Malbec vineyard — family home vineyard">
+                <img src="{{ url_for('static', filename='images/web/malbec-vineyard-3vines.jpg') }}" alt="3 Vines Winery — the rose arch entrance">
+            </div>
+            <p class="landscape-caption">Above is the 3 Vines Estate Winery Malbec vineyard.</p>
+
+            <p class="fun-fact">✦ Fun fact: I had originally set out to recreate <em>Keren Naftali</em> — a blend my father Yossi made in 2013, named after the mountain peak overlooking the Hula Valley. The wine took a different path, but the inspiration remains.</p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

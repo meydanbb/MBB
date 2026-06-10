@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Vintages — Ben Barak Wine Initiative{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>The Vintages</h1>
+        <div class="gold-divider"></div>
+        <p>Five years of harvests. Each wine a chapter.</p>
+    </div>
+</section>
+
+<section class="vintage-timeline">
+    <div class="container">
+
+        <!-- 2025 -->
+        <div class="vintage-entry">
+            <div class="vintage-year-col">
+                <span class="vintage-year">2025</span>
+                <div class="vintage-line"></div>
+            </div>
+            <div class="vintage-content">
+                <div class="vintage-wines">
+                    <span class="wine-tag">Malbec</span>
+                    <span class="wine-tag white">Viognier</span>
+                    <span class="wine-tag natural">Natural</span>
+                </div>
+                <h3>The Home Vineyard Harvest</h3>
+                <p>The 2025 vintage is rooted in family and community. The grapes were donated by two neighbouring vineyards — my parents' home vineyard, and the vineyard of Uri and Orital Agmon, who grow next to them. Both families donated their harvest for the cause.</p>
+                <p>Two wines were made: a Malbec and a Viognier. Both are fully natural — no added yeast, natural fermentation only, and no preservatives. The wine expresses the land exactly as it is.</p>
+                <p>These wines form the heart of the <strong>Lasting Echoes</strong> project — a memorial for 18 young female soldiers who fell on October 7, 2023.</p>
+                <div class="vintage-images">
+                    <img src="{{ url_for('static', filename='images/web/le-banner.jpg') }}" alt="Malbec and Viognier 2025 with Galilee view">
+                    <img src="{{ url_for('static', filename='images/web/le-viognier.jpg') }}" alt="Viognier 2025 — fresh off the line">
+                    <img src="{{ url_for('static', filename='images/web/malbec-vineyard.jpg') }}" alt="The Malbec vineyard — home vineyard">
+                    <img src="{{ url_for('static', filename='images/web/malbec-vineyard-3vines.jpg') }}" alt="3 Vines Winery — rose arch entrance">
+                </div>
+                <p class="landscape-caption">The bottom two photos show the 3 Vines Estate Winery Malbec vineyard.</p>
+            </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="vintage-entry">
+            <div class="vintage-year-col">
+                <span class="vintage-year">2022</span>
+                <div class="vintage-line"></div>
+            </div>
+            <div class="vintage-content">
+                <div class="vintage-wines">
+                    <span class="wine-tag white">Viognier</span>
+                    <span class="wine-tag natural">Natural</span>
+                    <span class="wine-tag special">Orange Wine</span>
+                </div>
+                <h3>The Winemaker's Turning Point</h3>
+                <p>The 2022 Viognier was the vintage where everything changed. For the first time, I approached the harvest with a fully formed vision — I wanted to make a natural wine, free from added yeasts and chemicals, and let the grape speak entirely for itself.</p>
+                <p>Ten percent of the wine was made as an orange wine: the juice was left in contact with the grape skins, then blended back into the main fermentation and left to mature in barrel. The result was a wine of surprising depth and character — and the vintage that made me feel, for the first time, like a true winemaker.</p>
+            </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="vintage-entry last">
+            <div class="vintage-year-col">
+                <span class="vintage-year">2021</span>
+            </div>
+            <div class="vintage-content">
+                <div class="vintage-wines">
+                    <span class="wine-tag">Petit Verdo</span>
+                    <span class="wine-tag">Cabernet Sauvignon</span>
+                </div>
+                <h3>The Beginning</h3>
+                <p>Everything started here. I harvested two varieties — a Petit Verdo and a Cabernet Sauvignon — intending to blend them. But when I tasted them separately, each wine had its own distinct voice. I decided to let them stand alone.</p>
+                <p>The proceeds from this first harvest were donated to cancer research. It was the inception of the Ben Barak Wine Initiative — the moment the idea became real.</p>
+                <div class="vintage-label">
+                    <img src="{{ url_for('static', filename='images/web/initiative-label.jpg') }}" alt="The Ben Barak Wine Initiative label artwork">
+                </div>
+                <p class="landscape-caption">The label of the Ben Barak Wine Initiative.</p>
+                <p class="fun-fact">✦ Fun fact: I had originally set out to recreate <em>Keren Naftali</em> — a blend my father Yossi made in 2013, named after the mountain peak overlooking the Hula Valley, the Golan Heights, and the Hermon. The wine took a different path, but the inspiration remains.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

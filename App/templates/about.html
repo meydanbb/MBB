@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}About — Ben Barak Wine Initiative{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>About</h1>
+        <div class="gold-divider"></div>
+        <p>Wine as heritage. Heritage as purpose.</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <h2>The Story Behind the Initiative</h2>
+        <p>The Ben Barak Wine Initiative was founded five years ago at the intersection of heritage, craft, and social responsibility. What began as a personal connection to wine — rooted in a family legacy of winemaking — has grown into a foundation that uses wine as a medium for meaningful impact.</p>
+        <p>My father, Yossi, built a winery at the foot of the Naftali Horn — a mountain overlooking the Hula Valley, the Golan Heights, and the Hermon. He called his blend <em>Keren Naftali</em>, named after that peak. When he passed, I carried that name and that love of wine forward, producing my first batch — a Petit Verdo and Cabernet Sauvignon — as a tribute to him, and donated the proceeds to cancer research.</p>
+        <p>We believe that wine carries memory. It marks moments, honors people, and brings communities together. That belief is at the heart of everything we do.</p>
+
+        <div class="about-father-photos">
+            <img src="{{ url_for('static', filename='images/web/yossi-portrait.jpg') }}" alt="Yossi Ben Barak in the vineyard">
+            <img src="{{ url_for('static', filename='images/web/yossi-vines-checking.jpg') }}" alt="Yossi Ben Barak tending his vines">
+        </div>
+
+        <div class="about-photo">
+            <img src="{{ url_for('static', filename='images/web/parents.png') }}" alt="Yossi and Einat Ben Barak">
+            <p class="photo-caption">Yossi and Einat Ben Barak — at the heart of the story.</p>
+        </div>
+
+        <h2>Two Sides, One Purpose</h2>
+        <p>The Initiative operates through two connected arms: social projects that raise funds for causes like cancer research and the memory of fallen soldiers, and a wine curation service that supports private and corporate clients. Both are united by the same commitment to quality, intention, and impact.</p>
+    </div>
+</section>
+{% endblock %}

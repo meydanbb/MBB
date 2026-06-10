@@ -1,1 +1,29 @@
 CLAUDE.md
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Local logs
+flask.log
+flask_err.log
+
+# Environment secrets
+.env
+
+# Raw photo folders — keep local only, site serves from images/web
+App/static/[Ii]mages/2021 wine lables/
+App/static/[Ii]mages/Elite18X/
+App/static/[Ii]mages/Kosher certificate/
+App/static/[Ii]mages/My father and mother/
+App/static/[Ii]mages/Noam Abromovitz evening/
+App/static/[Ii]mages/Reservist project - Yaniv Rivlin/
+App/static/[Ii]mages/Website panoramic pic/
+App/static/[Ii]mages/Wine making - 2022- Viognier/
+App/static/[Ii]mages/Wine making 2021/
+App/static/[Ii]mages/Wine making 2025- 2026/
+App/static/[Ii]mages/web/2025-2026/
+*.MOV
+*.HEIC
+*.psd
