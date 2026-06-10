@@ -783,21 +783,32 @@ nav {
     margin-bottom: 1.8rem;
 }
 
-.contact-alt {
-    margin-top: 1.5rem;
-    font-size: 0.95rem !important;
-    color: #777 !important;
-    margin-bottom: 0.3rem !important;
-}
-
-.contact-alt a {
-    color: var(--deep-wine);
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .contact-promise {
     font-size: 0.85rem !important;
     font-style: italic;
     color: #a89f90 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.contact-scroll-hint {
+    display: inline-block;
+    color: var(--deep-wine);
+    font-size: 0.95rem;
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+}
+
+.contact-scroll-hint:hover {
+    color: var(--gold);
 }
 
 /* CONTACT FORM */
