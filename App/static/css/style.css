@@ -878,10 +878,45 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    /* Header: logo on top, menu wraps neatly below */
+    header { padding: 0 1rem; }
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0.8rem 0 0.6rem;
+        gap: 0.6rem;
+    }
+    .logo a {
+        font-size: 1.05rem;
+        white-space: nowrap;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1.1rem;
+        padding: 0;
+    }
+    .nav-links a { font-size: 0.78rem; }
+
+    .hero { padding: 5rem 1.5rem; }
     .hero h1 { font-size: 2.2rem; }
+    .tagline { font-size: 1rem; }
     .two-sides .container { grid-template-columns: 1fr; }
     .side:first-child { border-right: none; border-bottom: 1px solid #ddd6c8; }
-    .nav-links { gap: 1rem; }
-    .logo a { font-size: 1rem; }
     .service-row { flex-direction: column; gap: 0.5rem; }
+
+    .project-images { flex-direction: column; }
+    .project-images img { width: 100%; }
+    .project-title-with-sketch { gap: 1rem; }
+    .butterfly-sketch { width: 64px; }
+    .about-father-photos { grid-template-columns: 1fr; }
+    .about-father-photos img { height: auto; }
+    .client-entry-images { flex-direction: column; }
+
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        bottom: 1.2rem;
+        right: 1.2rem;
+    }
 }
