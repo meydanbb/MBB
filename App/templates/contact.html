@@ -24,6 +24,10 @@
                 <a href="https://wa.me/972506286089" class="btn btn-primary" target="_blank">Message on WhatsApp</a>
                 <a href="mailto:info@benbarakwine.com" class="btn btn-outline">Send an Email</a>
             </div>
+            <p class="contact-email-line">
+                <span id="contact-email">info@benbarakwine.com</span>
+                <button type="button" id="copy-email" title="Copy address">⧉ copy</button>
+            </p>
             <p class="contact-promise">We usually reply within a day.</p>
             <a href="#leave-message" class="contact-scroll-hint">✦ Or leave us a message right here on the site ↓</a>
         </div>
@@ -61,6 +65,13 @@
 </section>
 
 <script>
+    document.getElementById('copy-email').addEventListener('click', function () {
+        navigator.clipboard.writeText('info@benbarakwine.com').then(() => {
+            this.textContent = '✓ copied';
+            setTimeout(() => { this.textContent = '⧉ copy'; }, 2000);
+        });
+    });
+
     if (new URLSearchParams(window.location.search).get('sent') === '1') {
         document.getElementById('form-success').hidden = false;
         document.querySelector('.contact-form').hidden = true;

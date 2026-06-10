@@ -790,6 +790,35 @@ nav {
     margin-bottom: 1rem;
 }
 
+.contact-email-line {
+    font-size: 0.95rem !important;
+    color: #777 !important;
+    margin-bottom: 0.4rem !important;
+}
+
+.contact-email-line span {
+    color: var(--deep-wine);
+    letter-spacing: 0.02em;
+}
+
+.contact-email-line button {
+    background: none;
+    border: 1px solid #ddd6c8;
+    border-radius: 2px;
+    padding: 0.15rem 0.6rem;
+    margin-left: 0.6rem;
+    font-family: 'Georgia', serif;
+    font-size: 0.8rem;
+    color: #777;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.contact-email-line button:hover {
+    border-color: var(--gold);
+    color: var(--deep-wine);
+}
+
 .contact-promise {
     font-size: 0.85rem !important;
     font-style: italic;
