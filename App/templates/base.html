@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Ben Barak Wine Initiative{% endblock %}</title>
+    <meta name="description" content="{% block description %}The Ben Barak Wine Initiative — Israeli boutique winemaking with purpose. Memorial and charity wine projects, and premium wine curation for private and corporate clients.{% endblock %}">
+    <link rel="canonical" href="https://benbarakwine.com{{ request.path if request.path != '/' else '' }}">
+
+    <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+    <meta property="og:site_name" content="Ben Barak Wine Initiative">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:description" content="{{ self.description() }}">
+    <meta property="og:url" content="https://benbarakwine.com{{ request.path if request.path != '/' else '' }}">
+    <meta property="og:image" content="https://benbarakwine.com{{ url_for('static', filename='images/web/le-banner.jpg') }}">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:alt" content="Ben Barak Wine Initiative — wines of the Galilee">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ self.title() }}">
+    <meta name="twitter:description" content="{{ self.description() }}">
+    <meta name="twitter:image" content="https://benbarakwine.com{{ url_for('static', filename='images/web/le-banner.jpg') }}">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
