@@ -7,25 +7,61 @@
 <section class="page-header">
     <div class="container">
         <h1>Contact</h1>
-        <p>Let's talk wine.</p>
+        <div class="gold-divider"></div>
+        <p>Every bottle starts with a conversation.</p>
     </div>
 </section>
 
-<section class="contact-content">
-    <div class="container">
-        <p>Whether you're interested in a project, looking for wine curation, or simply want to connect — reach out directly.</p>
-        <div class="contact-options">
-            <div class="contact-option">
-                <h3>WhatsApp</h3>
-                <p>The fastest way to reach us for orders and inquiries.</p>
-                <a href="https://wa.me/972506286089" class="btn btn-primary" target="_blank">Message on WhatsApp</a>
-            </div>
-            <div class="contact-option">
-                <h3>Email</h3>
-                <p>For formal inquiries and partnerships.</p>
-                <a href="mailto:bbltdgh@gmail.com" class="btn btn-outline">Send an Email</a>
-            </div>
+<section class="contact-split">
+    <div class="container contact-split-grid">
+        <div class="contact-photo">
+            <img src="{{ url_for('static', filename='images/web/le-landscape.jpg') }}" alt="The Galilee — home of our wines">
+        </div>
+        <div class="contact-info">
+            <h2>Let's talk wine</h2>
+            <p>Whether you're interested in one of our projects, looking for wine curation for an event or a gift, or simply want to connect — I'd love to hear from you.</p>
+            <a href="https://wa.me/972506286089" class="btn btn-primary" target="_blank">Message on WhatsApp</a>
+            <p class="contact-alt">Prefer email? Write to <a href="mailto:bbltdgh@gmail.com">bbltdgh@gmail.com</a></p>
+            <p class="contact-promise">We usually reply within a day.</p>
         </div>
     </div>
 </section>
+
+<section class="contact-form-section">
+    <div class="container">
+        <h2>Or leave a message</h2>
+        <div class="gold-divider"></div>
+        <p class="form-intro">Fill in the form and it lands straight in our inbox.</p>
+        <form class="contact-form" action="https://formsubmit.co/bbltdgh@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from benbarakwine.com">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://benbarakwine.com/contact?sent=1">
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-row">
+                <label>
+                    Name
+                    <input type="text" name="name" required placeholder="Your name">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="you@example.com">
+                </label>
+            </div>
+            <label>
+                Message
+                <textarea name="message" rows="5" required placeholder="Tell us what you're looking for..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p class="form-success" id="form-success" hidden>✦ Thank you — your message is on its way. We'll be in touch soon.</p>
+    </div>
+</section>
+
+<script>
+    if (new URLSearchParams(window.location.search).get('sent') === '1') {
+        document.getElementById('form-success').hidden = false;
+        document.querySelector('.contact-form').hidden = true;
+        document.querySelector('.form-intro').hidden = true;
+    }
+</script>
 {% endblock %}
